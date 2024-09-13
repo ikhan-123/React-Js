@@ -3,3 +3,17 @@
     align-items: center;
     justify-content: center;
 }
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.card-div{
+    border: 1px solid black;
+    width: ;
+   margin: 20px;
+   padding: 20px;
+
+}

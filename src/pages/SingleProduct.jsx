@@ -19,22 +19,24 @@ const SingleProduct = () => {
       })
   }, [id])
 
-if(!data){
-  return <div>Loading...</div>;
-}
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
 
 
   return (
     <>
-      <img src={data.image} alt={data.title} style={{
-        maxWidth: '300px',
-        maxHeight: '250px',
-        objectFit: 'cover'
-      }} />
-      <h3>{data.category}</h3>
-      <p>{data.description}</p>
-      <p>{data.price}</p>
+      <div className='card-div'>
+        <img src={data.image} alt={data.title} style={{
+          maxWidth: '300px',
+          maxHeight: '250px',
+          objectFit: 'cover'
+        }} />
+        <h3>{data.category}</h3>
+        <p>{data.description}</p>
+        <p> Price: {data.price}</p>
+      </div>
     </>
   )
 }
